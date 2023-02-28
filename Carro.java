@@ -34,4 +34,12 @@ public class Carro {
 	public void setPneus(String[] pneus) {
 		this.pneus = pneus;
 	}
+	
+	public void setNomePneus(int indice, String nomePneu) {
+		if (indice >= 0 && indice < pneus.length) {
+			pneus[indice] = nomePneu;
+		} else {
+			System.out.println("Erro: índice inválido de pneu!");
+		}
+	}
 }
